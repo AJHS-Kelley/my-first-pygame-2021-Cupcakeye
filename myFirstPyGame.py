@@ -48,6 +48,19 @@ pygame.draw.ellipse(windowSurface, RED, (300, 250, 40, 80), 1)
 pygame.draw.rect(windowSurface, RED, (textRect.left - 20, textRect.top - 20, textRect.width + 40, textRect.height + 40))
 
 # Create Pixel Array
-pixArray + pygame.pixelArray(windowSurface)
+PixArray + pygame.pixelArray(windowSurface)
 pixelArray[480][300] = BLUE
 del pixelArray 
+
+# Draw the text onto the surface
+windowSurface.blit(text, textRect)
+
+# Update Pygame Display
+pygame.display.update()
+
+# Run Game loop.
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
