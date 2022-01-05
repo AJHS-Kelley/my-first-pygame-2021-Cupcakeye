@@ -1,4 +1,4 @@
-# Simple Animation with PyGame, Tarita Brown, 1/05/22, 2:43PM, v0.1
+# Simple Animation with PyGame, Tarita Brown, 1/05/22, 2:45PM, v0.3
 
 import pygame, sys, time 
 from pygame.locals import *
@@ -19,3 +19,10 @@ UPLEFT = 'upleft'
 UPRIGHT = 'upright'
 
 MOVESPEED = 4 
+
+
+# Setup color values.
+WHITE = (255, 255, 255)
+RED = (255,0, 0)
+GREEN = (0,225,0)
+BLUE = (0, 0, 255) 
