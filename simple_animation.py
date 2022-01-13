@@ -41,9 +41,9 @@ while True:
         pygame.quit()
         sys.exit()
 
-      windowSurface.fill(WHITE)  
+       windowSurface.fill(WHITE)  
 
-      for b in boxes: 
+    for b in boxes: 
           # Move the box data strucure.
           if b['dir'] == DOWNLEFT:
               b['rect'].left -= MOVESPEED
@@ -57,5 +57,11 @@ while True:
           if b['dir'] == UPRIGHT: 
               b['rect'].left += MOVESPEED
               b['rect'].top -= MOVESPEED 
+
+          if b['rect'].top < 0:
+              # The box has moved past the top. 
+              if b['dir'] == UPLEFT:
+                  b['dir'] = DOWNLEFT
+              if   
 
 
